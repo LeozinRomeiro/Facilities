@@ -7,7 +7,7 @@
     <title>Teste</title>
 </head>
 <body>
-    <p>Leonardo</p>
+    <p>Calculador</p>
     <div id="calc">
         <input type="text" id="v1" value="0"/>
         <br>
@@ -15,6 +15,7 @@
         <br>
         <input type="text" id="res" value="0"/>
         <button id="bnt_soma">Somar</button>
+        <button id="bnt_somaJ">Jquery</button>
     </div>
 </body>
 
@@ -25,9 +26,18 @@
         soma=parseInt(v1)+parseInt(v2)
         let res=document.getElementById("res").value=soma
     })
+
+    $("p").css("color","blue");
+    $("#bnt_somaJ").click(()=>{
+        let v1=parseInt($("#v1").val())
+        let v2=parseInt($("#v2").val())
+        let soma = v1 + v2
+        $("#res").val(soma)
+    })
+
 </script>
 
 <script>
-    $("p").css("color","blue");
+
 </script>
 </html>
