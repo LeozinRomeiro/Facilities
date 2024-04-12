@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.min.js"></script>
+    <title>Teste</title>
+</head>
+<body>
+    <p>Leonardo</p>
+    <div id="calc">
+        <input type="text" id="v1" value="0"/>
+        <br>
+        <input type="text" id="v2" value="0"/>
+        <br>
+        <input type="text" id="res" value="0"/>
+        <button id="bnt_soma">Somar</button>
+    </div>
+</body>
+
+<script>
+    let bnt_soma=document.getElementById("bnt_soma").addEventListener("click",()=>{
+        let v1=document.getElementById("v1").value
+        let v2=document.getElementById("v2").value
+        soma=parseInt(v1)+parseInt(v2)
+        let res=document.getElementById("res").value=soma
+    })
+</script>
+
+<script>
+    $("p").css("color","blue");
+</script>
+</html>
