@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <p id="text1">Nesse não clique</p>
+    <br>
+    <div id="text2">Test</div>
+    <br>
+    <p id="result">Test</p>
+    <p id="resultId">Test</p>
+    <p id="resultFull">Test</p>
+</body>
+
+<script>
+    $(document).click((event)=>{
+        $("#result").text("Objeto clicado: " + event.target.nodeName)
+        $("#resultId").text("Objeto clicado: " + event.target.id)
+        if(event.target.id == "text1")
+            alert("Não sabe ler?")
+    })
+    $(document).on({
+        click:()=>{$("#resultFull").text(event.type + ": " + event.which)},
+        keydown:()=>{
+            let whichText = event.which
+            if(event.which==13)
+                whichText = "enter"
+            $("#resultFull").text(event.type + ": " + whichText)
+        }
+    })
+
+</script>
+</html>
