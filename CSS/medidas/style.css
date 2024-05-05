@@ -1,0 +1,19 @@
+.conteudo{
+    width: 80%;
+    height: 80vh;
+    border: 5px solid black;
+    background-color: beige;
+    color: blue;
+    font-size: 2em; /* -> Reutilização de codigo por que podemos alterar todo web site num ponto unico */ 
+}
+
+/* 
+    medidas relativas - altera conforme o tamanho do dispositivo
+        %
+        vw
+        vh
+        em -> componente pai
+        rem -> raiz html
+    medidas absolutas - não alteram
+        px
+*/
