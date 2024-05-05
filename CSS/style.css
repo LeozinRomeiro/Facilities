@@ -1,0 +1,28 @@
+/* Seletores
+     classe . -> um seletor para group
+     Id # -> só pode ser usado uma vez
+     tags -> primitivo
+
+*/
+
+.textos-curtos{ /* boas pratica para nome composto */ 
+    background-color: aquamarine;
+    font-size: 25px;
+    font-weight: 300px;    
+}
+
+#texto-curto{
+    background-color: blue;
+    font-size: 30px;
+    font-weight: 300px;   
+}
+
+h1{
+    background-color: blueviolet;
+}
+
+p{
+    background-color: chartreuse;
+}
+
+
