@@ -1,0 +1,10 @@
+.conteudo{
+    width: 80%;
+    height: 80vh;
+    border: 5px solid black;
+    background-color: beige;
+    color: blue;
+    font-size: 2em;
+    margin: 5vw 8vw 5vw 8vw;     /* top left bottom right  para definir todos ou usar apenas apontar uma medida para usar em todos*/ 
+    padding: 3vw;
+}
