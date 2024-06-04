@@ -1,0 +1,59 @@
+/* Intuito desse conceito é colocar os elementos dentro de uma caixa para manipular */
+
+.grid{
+    display: grid;
+}
+
+.column{
+    grid-template-columns: 30% 60% 10%;
+    /* grid-template-columns: 100px 100px 100px; Criar 3 colunas fixas */
+    /* grid-template-columns: 100px 100px 1fr; Fracionar a ultima coluna para ocupar o resto*/
+}
+
+.row{
+    grid-template-rows: 50px 150px 50px;
+}
+
+.area{
+    grid-template-areas: 
+        "area-1 area-2 area-2"
+        "area-3 area-4 area-5"
+        "area-3 area-6 area-6"
+    ;
+}
+
+.area-1{
+    grid-area: area-1;
+}
+.area-2{
+    grid-area: area-2;
+}
+.area-3{
+    grid-area: area-3;
+}
+.area-4{
+    grid-area: area-4;
+}
+.area-5{
+    grid-area: area-5;
+}
+.area-6{
+    grid-area: area-6;
+}
+
+.conteudo{
+    max-width: 400px;
+    border: 5px solid black;
+    background-color: rgb(181, 190, 242);
+    color: blue;
+    font-size: 2em;
+    margin: 5vw 8vw 5vw 8vw; 
+    padding: 2vw;
+}
+
+
+.elemento{
+    background-color: rgb(24, 110, 14);
+    color: white;
+    margin: 3px;
+}

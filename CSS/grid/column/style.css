@@ -1,0 +1,25 @@
+/* Intuito desse conceito é colocar os elementos dentro de uma caixa para manipular */
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 100px 100px 100px; Criar 3 colunas fixas */
+    /* grid-template-columns: 100px 100px 1fr; Fracionar a ultima coluna para ocupar o resto*/
+}
+
+.conteudo{
+    max-width: 400px;
+    border: 5px solid black;
+    background-color: rgb(181, 190, 242);
+    color: blue;
+    font-size: 2em;
+    margin: 5vw 8vw 5vw 8vw; 
+    padding: 2vw;
+}
+
+
+.elemento{
+    background-color: rgb(24, 110, 14);
+    color: white;
+    margin: 3px;
+}
