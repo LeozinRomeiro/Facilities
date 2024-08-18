@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+h1,
+h2,
+strong{
+    font-weight: 900;
+}
+
+a{
+    color: orangered;
+}
+
+a:hover,
+a:focus{
+    color: yellow;
+}
+
+img{
+    width: 100%;
+}
+
+header {
+    background: orangered;
+    padding: 45px 0;
+    color: #fff;
+}
+
+section{
+    padding: 45px 0;
+}
+
+.container{
+    width: 90%;
+    max-width: 620px;
+    border: 2px solid yellow;
+    margin: 0 auto;
+}
+
+@media(max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+}
