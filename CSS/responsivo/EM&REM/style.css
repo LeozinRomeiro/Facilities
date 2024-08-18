@@ -1,13 +1,64 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
     font-size: 16px; /* Tamanho base 16px */
 }
 
+h1{
+    font-size: 2em;
+    margin: 0;
+}
+
+h2{
+    color: black;
+}
+
+.h2-in-em{
+    font-size: 1.5em;
+}
+
+.h2-in-rem{
+    font-size: 1.5rem;
+}
+
+
+section{
+    padding: 45px 0;
+}
+
+.section-one{
+    font-size: 32px;
+}
+
+footer{
+    background: orangered;
+    padding: 45px;
+    color: #fff;
+}
+
+.ul-in-em {
+    font-size: 1em;
+}
+
+.ul-in-rem {
+    font-size: 1rem;
+}
+
 .container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.section-two{
     display: flex;
     font-size: 28px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+header {
+    background: orangered;
+    padding: 45px 0;
+    color: #fff;
 }
 
 .box {
@@ -20,7 +71,7 @@ body {
 }
 
 .boxrem {
-    background: orangered;
+    background: red;
     font-size: 1rem; /* 1rem igual ao tamanho definido no body */
 }
 
