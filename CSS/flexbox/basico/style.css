@@ -61,12 +61,40 @@ section{
     align-items: center;
 }
 
+.grow{
+    flex-grow: 1;
+}
+.elemento.grow{
+    background-color: aquamarine;
+}
+
+.shrink{
+    flex-shrink: 2;
+}
+.elemento.shrink{
+    background-color: red;
+}
+
+.basic{
+    flex-basis: 50%;
+}
+.align{
+    flex-direction: column;
+}
+.align.flex-start{
+    align-items: flex-start;
+}
+
+.align.flex-end{
+    align-items: flex-end;
+}
+
 .conteudo{
     max-width: 400px;
     border: 5px solid black;
     background-color: beige;
     color: blue;
-    font-size: 1rem;
+    font-size: 1em;
     margin: 5vw 8vw 5vw 8vw; 
     padding: 1vw;
 }
@@ -76,4 +104,5 @@ section{
     background-color: blueviolet;
     color: white;
     margin: 3px;
+    padding: 1em;
 }
